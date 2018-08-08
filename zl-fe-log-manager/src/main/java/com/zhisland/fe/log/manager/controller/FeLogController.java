@@ -16,7 +16,7 @@ public class FeLogController extends BaseController{
 
 	@RequestMapping("/fe/log")
 	public void FeLog(@RequestParam(value = "logInfo") String logInfo){
-		log.info("logInfo:{}", logInfo);
+		log.info("[logInfo]:[{}]", logInfo);
 	}
 
 }
