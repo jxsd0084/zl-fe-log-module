@@ -1,0 +1,35 @@
+---
+spring:
+  profiles: dev
+
+  datasource:
+    url: "jdbc:mysql://192.168.2.46:3306/zhd_send_platform?useUnicode=true&characterEncoding=UTF-8"
+    username: "base"
+    password: "zhd_base#"
+    driver-class-name: "com.mysql.jdbc.Driver"
+    initial-size: 20
+    max-active: 300
+    max-idle: 50
+    min-idle: 20
+    max-wait: 1000
+    test-on-borrow: true
+    test-on-return: true
+    test-while-idle: true
+    validation-query: "select 1 from dual"
+
+
+---
+spring:
+  profiles: test
+
+
+---
+spring:
+  profiles: uat
+
+
+---
+spring:
+  profiles: product
+
+  
